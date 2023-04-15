@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>해피바스</title>
+        <!-- jquery -->
+        <script src="./js/jquery-3.6.0.js"></script>
+        <!-- swiper js -->
+        <script src="./js/swiper.js"></script>
+        <!-- swiper css -->
+        <link rel="stylesheet" href="./css/swiper.css">
+        <!-- css -->
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/laptop.css">
+        <link rel="stylesheet" href="./css/mobile.css">
+        <!-- js -->
+        <script src="./js/index.js"></script>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Noto+Sans+KR:wght@300;500;900&display=swap" rel="stylesheet">
+        <!-- aos -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="top_btn">
+                <img src="./img/top_btn.png" alt="맨위로 올라가는 버튼">
+                <p>TOP</p>
+            </div>
+            <header>
+                <div id="header_background"></div>
+                <div id="m_header_background"></div>
+                <div id="header_con">
+                    <div id="header_left">
+                        <div id="header_logo">
+                            <a href="#">
+                                <img src="./img/logo_01_white 1.png" alt="해피바스로고">
+                            </a>
+                        </div>    
+                    </div>
+                    <div id="header_right">
+                        <div id="header_login_box">
+                            <div class="header_login">
+                                <ul>
+                                    <li><a href="#">로그인</a></li>
+                                    <li><a href="#">회원가입</a></li>
+                                    <li><a href="#">
+                                        <img src="./img/search_btn.svg" alt="검색아이콘">
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="store">
+                            <span>Store<span class="icon_shop"></span></span>
+                            <div class="store_box">
+                                <ul>
+                                    <li><a href="#">매장찾기</a></li>
+                                    <li><a href="#">온라인 구매하기</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="header_btn">
+                            <div id="header_burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div id="m_header_btn">
+                            <div id="m_header_burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_menu_con">
+                    <!-- <div class="header_login">
+                        <ul>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">
+                                <img src="./img/search_btn.svg" alt="검색아이콘">
+                            </a></li>
+                        </ul>
+                    </div> -->
+                    <div class="header_menu">
+                        <div class="menu">
+                            <div>
+                                <p>해피바스 이야기</p>
+                            </div>
+                            <ul class="menu_text">
+                                <li><a href="#">브랜드 히스토리</a></li>
+                                <li><a href="#">영상 갤러리</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu">
+                            <div>
+                                <p>해피바스 선물</p>
+                            </div>
+                            <ul class="menu_text">
+                                <li><a href="#">내추럴 성분</a></li>
+                                <li><a href="#">풍성한 향</a></li>
+                                <li><a href="#">즐거운 경험</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu">
+                            <div>
+                                <p>해피바스 뷰티톡</p>
+                            </div>
+                            <ul class="menu_text">
+                                <li><a href="#">뷰티코민 x 뷰티팁</a></li>
+                                <li><a href="#">자산화 원료</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu">
+                            <div>
+                                <p>해피바스 제품</p>
+                            </div>
+                            <ul class="menu_text">
+                                <li><a href="#">유형별 제품</a></li>
+                                <li><a href="#">고민별 제품</a></li>
+                                <li><a href="#">전체 제품 보기</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="m_header_menu_con">
+                    <ul>
+                        <li>
+                            <div>
+                                <p>해피바스 이야기<p>
+                            </div>
+                            <ul class="m_menu_text">
+                                <li><a href="#">브랜드 히스토리</a></li>
+                                <li><a href="#">영상 갤러리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div>
+                                <p>해피바스 선물</p>
+                            </div>
+                            <ul class="m_menu_text">
+                                <li><a href="#">내추럴 성분</a></li>
+                                <li><a href="#">풍성한 향</a></li>
+                                <li><a href="#">즐거운 경험</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div>
+                                <p>해피바스 뷰티톡<p>
+                            </div>
+                            <ul class="m_menu_text">
+                                <li><a href="#">뷰티코민 x 뷰티팁</a></li>
+                                <li><a href="#">자산화 원료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div>
+                                <p>해피바스 제품</p>
+                            </div>
+                            <ul class="m_menu_text">
+                                <li><a href="#">유형별 제품</a></li>
+                                <li><a href="#">고민별 제품</a></li>
+                                <li><a href="#">전체 제품 보기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <video muted autoplay loop>
+                        <source src="./video/videoplayback.mp4">
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <video muted autoplay loop>
+                        <source src="./video/HandCream render2.mp4">
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <video muted autoplay loop>
+                        <source src="./video/video.mp4">
+                    </video>
+                </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                loop : true,
+                });
+            </script>
+            <div id="sec2">
+                <div class="container-1300">
+                    <div class="sec_left" data-aos="fade-up-right" data-aos-duration="1500">
+                        <div class="sec_text_box">
+                            <h3 class="text_title">제품리뷰</h3>
+                            <div id="sec2_img">
+                                <img src="./img/spr_btns (2).png" alt="별점이미지">
+                            </div>
+                            <p>[오리지널컬렉션 솝 라벤더 바디워시]</p>
+                            <p>정말 오랜만에 향기도 좋고</p>
+                            <p>성분도 착한 바디워시를 만났어요!</p>
+                            <P>마일드한 세정력도 좋고 저자극의 바디워시입니다.</P>
+                            <p>mwq8***님의 리뷰 중</p>
+                            <div class="sec_btn">
+                                <p>자세히 보기</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec_right" data-aos="fade-down-left" data-aos-duration="1500">
+                        <div class="sec_img">
+                            <img src="./img/sec_img1.png" alt="라벤더 바디워시 사진">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sec3">
+                <div class="container-1300">
+                    <div class="sec_left" data-aos="fade-down-right" data-aos-duration="1500">
+                        <div class="sec_img">
+                            <img src="./img/sec_img2.png" alt="베스트제품사진">
+                        </div>
+                    </div>
+                    <div class="sec_right" data-aos="fade-up-left" data-aos-duration="1500">
+                        <div class="sec_text_box">
+                            <h3 class="text_title">베스트 셀러</h3>
+                            <p>[마이크로미셀라 딥 클렌징 폼]</p>
+                            <p>해피바스에서 가장 사랑받는</p>
+                            <p>제품들을 만나보세요</p>
+                            <p>#해피바스 <span> #베스트셀러</span></p>
+                            <div class="sec_btn">
+                                <p>자세히 보기</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div id="sec4">
+                <div class="container-1300">
+                    <div class="sec_left" data-aos="fade-up-right" data-aos-duration="1500">
+                        <div class="sec_text_box">
+                            <h3 class="text_title">뷰티톡</h3>
+                            <p>[피부고민 x 뷰티팁]</p>
+                            <p>피부 고민에 따라 나에게 맞는</p>
+                            <p>피부 관리법과 제품을 알아보세요.</p>
+                            <p>#여드름피부 <span>#수부지타입</span></p>
+                            <div class="sec_btn">
+                                <p>자세히 보기</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec_right" data-aos="fade-down-left" data-aos-duration="1500">
+                        <div class="sec_img">
+                            <img src="./img/sec_img3.png" alt="피부고민 사진">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sec5">
+                <div id="sec5_img" data-aos="fade-zoom-in">
+                    <img src="./img/banner_01.png" alt="sns이벤트광고 사진">
+                    <div id="sec5_text_con">
+                        <div id="sec5_text" data-aos="zoom-in" data-aos-duration="1000">
+                            <p>SNS에</p>
+                            <p>제품 사진 올리고 경품 받으세요</p>
+                            <div id="sec5_btn">
+                                <p>이벤트 보기</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sec6">
+                <div id="sec6_top">
+                    <div id="sec6_top_img1">
+                        <div id="sec6_title">
+                            <div id="sec6_logo" data-aos="fade-down-right" data-aos-duration="900">
+                                <img src="./img/logo_01.png" alt="해피바스로고사진">
+                            </div>
+                            <p data-aos="fade-down-right" data-aos-duration="1100" data-aos-delay="200">Go follow @happybath.official</p>
+                            <div id="follow_float" data-aos="fade-down-right" data-aos-duration="1300" data-aos-delay="300">
+                                <p>Follow Us</p>
+                                <div class="icon_sns">
+                                    <img src="./img/facebookLogo.png" alt="페이스북 아이콘">
+                                </div>
+                                <div class="icon_sns">
+                                    <img src="./img/instaLogo.png" alt="인스타그램 아이콘">
+                                </div>
+                                <div class="icon_sns">
+                                    <img src="./img/youtubeLogo.png" alt="유튜브 아이콘">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sec6_img1" class="sec6_img"  data-aos="fade-right" data-aos-duration="900" data-aos-delay="400">
+                            <img src="./img/follow_img1.png" alt="인스타피드 이미지1">
+                        </div>
+                    </div>
+                    <div id="sec6_top_img2" class="sec6_img" data-aos="fade-down-right" data-aos-duration="900" data-aos-delay="400">
+                        <img src="./img/follow_img2.png" alt="인스타피드 이미지2">
+                    </div>
+                    <div id="sec6_top_img3" class="sec6_img" data-aos="fade-down" data-aos-duration="900" data-aos-delay="500">
+                        <img src="./img/follow_img3.png" alt="인스타피드 이미지3">
+                    </div>
+                    <div id="sec6_top_img4" class="sec6_img" data-aos="fade-down-left" data-aos-duration="900" data-aos-delay="400">
+                        <img src="./img/follow_img4.png" alt="인스타피드 이미지4">
+                    </div>
+                </div>
+                <div id="sec6_bot">
+                    <div id="sec6_bot_img1" class="sec6_img" data-aos="fade-up-right" data-aos-duration="900" data-aos-delay="400">
+                        <img src="./img/follow_img5.png" alt="인스타피드 이미지5">
+                    </div>
+                    <div id="sec6_bot_img2" class="sec6_img" data-aos="fade-up-right" data-aos-duration="900" data-aos-delay="500">
+                        <p data-aos="fade-up-left" data-aos-duration="900" data-aos-delay="100">Go follow @happybath.official</p>
+                        <img src="./img/follow_img6.png" alt="인스타피드 이미지6">
+                        <img src="./img/follow_img6.jpg" alt="모바일 인스타피드 이미지6">
+                    </div>
+                    <div id="sec6_bot_img3" class="sec6_img" data-aos="fade-up-left" data-aos-duration="900" data-aos-delay="400">
+                        <img src="./img/follow_img7.png" alt="인스타피드 이미지7">
+                        <img src="./img/follow_img9.jpg" alt="모바일 인스타 피드7">
+                    </div>
+                    <div id="sec6_bot_img4" class="sec6_img" data-aos="fade-up-left" data-aos-duration="900" data-aos-delay="500">
+                        <img src="./img/follow_img8.png" alt="인스타피드 이미지8">
+                        <img src="./img/follow_img8.jpg" alt="모바일 인스타피드 이미지8">
+                        <div id="sec6_bot_text">
+                            <p data-aos="fade-down-right" data-aos-duration="1100" data-aos-delay="200">Go follow @happybath.official</p>
+                            <div id="follow_float" data-aos="fade-down-right" data-aos-duration="1300" data-aos-delay="300">
+                                <p>Follow Us</p>
+                                <div class="icon_sns">
+                                    <img src="./img/facebookLogo.png" alt="페이스북 아이콘">
+                                </div>
+                                <div class="icon_sns">
+                                    <img src="./img/instaLogo.png" alt="인스타그램 아이콘">
+                                </div>
+                                <div class="icon_sns">
+                                    <img src="./img/youtubeLogo.png" alt="유튜브 아이콘">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div id="footer_text">
+                    <ul>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">영상처리방침</a></li>
+                        <li><a href="#">뷰티포인트</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                    <p>고객상담팀(수신자 요금 부담) 080-023-5454상담시간 월~금 : AM 09:00 ~ PM 06:00</p>
+                    <p>© AMOREPACIFIC CORPORATION. All rights reserved.</p>
+                    <div id="footer_img">
+                        <img src="./img/footer_img.png" alt="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)">
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
